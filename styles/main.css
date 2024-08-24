@@ -1,107 +1,248 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* 
+Estilização do CSS
+
+Paleta de cores:
+#9D49F2 ROXO
+#118C53 VERDE ESCURINHO
+#1BBF72 VERDE CLARO
+#BF7D56 AMARELO QUEIMADO
+#262626 MARROM ESCURO
+
+Google Font:
+HTML:
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="connect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+CSS:
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+
+/* CSS */
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
 }
 
-.container {
-    background-color: #e6f2ff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+body {
+    background: hsla(22, 45%, 54%, 1);
+
+    background: linear-gradient(90deg, hsla(22, 45%, 54%, 1) 0%, hsla(0, 0%, 100%, 1) 68%, hsla(0, 0%, 100%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(22, 45%, 54%, 1) 0%, hsla(0, 0%, 100%, 1) 68%, hsla(0, 0%, 100%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(22, 45%, 54%, 1) 0%, hsla(0, 0%, 100%, 1) 68%, hsla(0, 0%, 100%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BF7D56", endColorstr="#FFFFFF", GradientType=1 );
+
+
+
+   /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right top, #262626, #463a46, #734b59, #a05f5d, #bf7d56); */
+    
+}
+
+/* barra de titulo */
+.barra-titulo{
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    background-color: #FFF;
+    padding: 7px;
+    margin: 7px;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+.barra-titulo-direita{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.barra-titulo-direita a {
+    text-decoration: none;
+}
+.barra-titulo-esquerda a {
+    text-decoration: none;
 }
 
 h1 {
-    text-align: center;
-    color: #005f99;
+    font-size: 55px;
+    color: #9D49F2;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding: 2px;
 }
 
-.form-group {
-    margin-bottom: 15px;
+h3 {
+    color: #118C53;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 2px;
 }
 
-.form-group label {
-    display: block;
-    color: #003366;
-    margin-bottom: 5px;
+.img-titulo{
+    height: 100px;
 }
 
-.form-group input, 
-.form-group textarea, 
-.form-group select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #b3d1ff;
-    border-radius: 5px;
-    box-sizing: border-box;
+
+/* barra de menu */
+.menu {
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    background-color: #1BBF72;
+    height: 50px;
+    padding: 7px;
+    margin: 7px;  
+    margin-top: 0;
+    align-items: center;
+
 }
 
-button {
-    width: 100%;
+.itens-menu a {
     padding: 10px;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
+
+}
+.menu a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.div-botao{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.button-escritor {
+    height: 45px;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #9D49F2;
+    color:#FFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #005bb5;
+
+/* body */
+
+.todos-posts {
+    display: flex;
+    width: 80%;
+    margin: 0 auto; 
+    font-size: 35px;
+    font-style: italic;
+    color: #262626;
 }
 
 
-/* */
-
-.container {
-    background-color: #e6f2ff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    width: 90%;
-    max-width: 800px;
+.container-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 80%;
+    background-color: #FFF;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;;
+    margin-bottom: 43.575px;
+   
+        
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
+/* CSS a partir do JS */
 
-table, th, td {
-    border: 1px solid #b3d1ff;
-}
 
-th, td {
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #0073e6;
-    color: white;
-}
-
-button.delete-btn {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
+.div-post-home {
+    width: 350px;
+    background-color: #FFF;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
     cursor: pointer;
 }
 
-button.delete-btn:hover {
-    background-color: #cc0000;
+.foto-post-home {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+ .tipo-post-home {
+    color:#BF7D56;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+ }
+
+ .titulo-post-home, .aviso {
+    font-size: 25px;
+    text-align: justify;
+    padding: 0;
+    
+ }
+
+ .todos-posts {
+    color:#BF7D56;
+    font-size: 28px;
+ }
+
+ .tempos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color:#bf7d56;
+    margin:10px 0;
+ }
+
+.data {
+    font-weight: bold;
+
 }
 
 
-/* CSS menu */
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+    border-radius: 3px;
+    background-color: #1BBF72;
+    height: 100px;
+    padding: 7px;
+    margin: 7px;  
+    margin-top: 0;
+    justify-content: flex-end;
+    align-items: end;
+    bottom: 0;
+}
 
+h5 {
+    color:#262626;
+    font-weight: bold;
+    margin: 0;
+    padding: 2px;
+    justify-content: end;
+}

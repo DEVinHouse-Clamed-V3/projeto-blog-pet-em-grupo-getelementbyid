@@ -1,0 +1,114 @@
+/* Estilo para a caixa do formulário de login */
+.login-container {
+    display: flex; /* Transformar o container para ficar flexível */
+    justify-content: center; /* Alinhar os itens dentro do container */
+    align-items: center; /* Alinhar os itens dentro do container */
+    height: 100%; /* Definir que a altura do elemento ocupe 100% da altura do container pai */
+    width: 100%; /* Definir que a largura do elemento ocupe 100% da largura do container pai */
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
+}
+
+/* Estilo para o cartão do formulário de login */
+.login-cartao {
+    background: #fff;
+    border-radius: 8px; /* Arredondar as bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aplica uma sombra ao redor do elemento */
+    padding: 0; /* Definir espaço interno entre o conteúdo de um elemento e suas bordas */
+    width: 350px; /* Definir a largura do elemento */
+    box-sizing: border-box; /* A largura e a altura do elemento devem incluir o padding e a borda dentro da dimensão total do elemento */
+}
+
+/* Estilo para o cabeçalho do formulário */
+.login-header {
+    height: 50px;
+    background-color: #9D49F2; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 8px 8px 0 0; /* Arredondar apenas as bordas superiores do cabeçalho */
+    text-align: center; /* Alinhar o texto no centro */
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+
+}
+
+/* Estilo para o Título do formulário */
+.login-titulo {
+    margin: 0; /* Remover margem padrão */
+    font-size: 24px; /* Tamanho do texto */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhar o texto no centro */
+    padding: 10px;
+}
+
+/* Estilos para o grupo de formulário */
+.formulario-grupo {
+    margin-bottom: 15px; /* Definir o espaço externo abaixo de um elemento */
+    margin-top: 10px; /* Definir o espaço externo acima de um elemento */
+    display: flex; /* Diz ao navegador como o elemento deve se comportar em relação ao layout da página */
+    flex-direction: column; /* Diz ao navegador como os elementos devem se comportar no eixo vertical */
+    gap: 10px; /* Definir o espaço entre os elementos */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.formulario-grupo label {
+    display: block; /* Diz ao navegador como o elemento deve se comportar em relação ao layout da página */
+    margin-bottom: 5px; /* Definir o espaço externo abaixo de um elemento */
+    font-weight: bold; /* Colocar o texto em negrito */
+
+}
+
+.formulario-controle {
+    width: 100%; /* Definir que a largura do elemento ocupe 100% da largura do container pai */
+    padding: 10px; /* Definir espaço interno entre o conteúdo de um elemento e suas bordas */
+    border: 1px solid #ddd; /* Usar uma borda ao elemento */
+    border-radius: 4px; /* Arredondar a borda do elemento */
+    box-sizing: border-box; /* A largura e a altura do elemento devem incluir o padding e a borda dentro da dimensão total do elemento */
+    
+}
+
+/* Estilo para o Botão de Entrar */
+.btn-submit {
+    width: 90%; /* Definir que a largura do elemento ocupe 100% da largura do container pai */
+     margin: 15px; 
+    padding: 10px; /* Definir espaço interno entre o conteúdo de um elemento e suas bordas */
+    background-color: #9D49F2; /* Definir a cor do botão */
+    border: none; /* Remover qualquer tipo de borda */
+    border-radius: 4px; /* Arredondar a borda do elemento */
+    color: #ffffff; /* Cor do texto do botão */
+    font-size: 16px; /* Tamanho da fonte do texto */
+    cursor: pointer; /* Alterar o cursor ao passar por cima do botão */
+    
+}
+
+.btn-submit:hover {
+    background-color: #8721ee; /* Mudar a cor ao passar o mouse por cima do botão */
+}
+
+/* Estilo para mensagens de erro */
+.login-error {
+    color: #dc3545; /* Colocar a mensagem do erro em vermelho */
+    text-align: center; /* Centralizar a mensagem do erro */
+    margin-top: 15px; /* Criar um espaçamento do botão */
+}
+
+.criar-conta{
+    color: #3498db; /* Colocar o link em azul */
+    text-decoration: none; /* Remover underline do link */
+    margin-top: 10px; /* Criar um espaçamento do botão */
+    margin-bottom: 20px;
+    display: block; /* Colocar o link em uma nova linha */
+    text-align: center; /* Centralizar o link */
+    font-size: 14px; /* Tamanho da fonte do texto */
+    cursor: pointer; /* Alterar o cursor ao passar por cima do botão */
+}
+
+.ja-logado-mensagem {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+    color: #9D49F2;
+    
+}

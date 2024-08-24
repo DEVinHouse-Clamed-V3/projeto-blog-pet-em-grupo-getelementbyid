@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href="styles/login.css" rel="stylesheet">
+    <title>Home</title>
 </head>
+
 <body>
+    <!--barra de titulo-->
+    <div class="barra-titulo">
+
+        <div class="barra-titulo-esquerda">
+            <a href="index.html">
+                <h1>Vida de Pet</h1>
+            </a>
+            <h3>Tudo Sobre Amar e Cuidar seus Bichinhos!</h3>
+        </div>
+
+        <div>
+            <img class="img-titulo" src="foto.png" />
+        </div>
+
+        <div class="barra-titulo-direita">
+            <span id="bemVindoMensagem" style="display:none;">Bem-vindo!</span>
+            <a id="loginLink" href="login.html">
+                <h3>Login</h3>
+            </a>
+            <a id="sairLink" href="#" style="display:none;">
+                <h3>Sair</h3>
+            </a>
+        </div>
+       <!-- <div class="barra-titulo-direita">
+            <a href="login.html">
+                <h3>Login</h3>
+            </a>
+        </div> -->
+
+    </div>
+
+
+    <!-- barra de menu-->
+    <div class="menu">
+
+        <div class="itens-menu">
+            <a>Cães</a>
+            <a>Gatos</a>
+            <a>Pássaros</a>
+            <a>Diversos</a>
+        </div>
+
+        <div class="div-botao">
+            <button class="button-escritor">Seja um escritor</button>
+        </div>
+
+    </div>
+
+  
+
+    <div class="login-container" id="loginContainer">
+        <div class="login-cartao">
+            <!-- Título "Login" dentro de uma div com fundo azul -->
+            <div class="login-header">
+                <h3 class="login-titulo">Login</h3>
+            </div>
+            <form id="loginFormulario">
+                <div class="formulario-grupo">
+                    <label for="email">Email</label>
+                    <input type="email" class="formulario-controle" id="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="formulario-controle" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn-submit">Entrar</button>
+                <div id="loginError" class="login-error"></div>
+            </form>
+            <!-- Hiperlink para "Ainda não tem Conta?" sem o href -->
+            <div class="criar-conta">
+                <a id="criarContaLink">Ainda não tem Conta?</a>
+            </div>
+        </div>
+    </div>
     
+    <!-- Mensagem para usuários já logados -->
+    <div class="ja-logado-mensagem" id="jaLogadoMensagem" style="display: none;">
+        <h3>Você já está logado</h3>
+    </div>
+
+
+    <div class="footer">
+        <footer>
+            <h5>@Direitos reservados aos autores: Alexandro Oliveira, Dominice Lanzarini, Gustavo Branquinho e Murilo DeCarvalho
+            </h5>
+        </footer>
+    </div>
+
+
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/login.js"></script>
+
+
 </body>
+
 </html>
