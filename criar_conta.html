@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/criar_conta_styles.css" />
+    <script src="scripts/criar_conta.js" defer></script>
+  </head>
+  <body>
+    <div class="register-container container">
+      <div class="header-div">
+        <h1>Criar conta</h1>
+      </div>
+      <div class="div-render-url-img">
+        <img src="" alt="User Image" id="user-image" />
+      </div>
+      <form class="register-container-form form-group" id="register-container-form" autocomplete="off">
+        <label for="url-da-foto">Url da foto:</label>
+        <input type="url" name="url-da-foto" id="url-da-foto" placeholder="https://foto.com" required />
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Johnny" required />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="usuario@mail.com" required />
+
+        <label for="senha">Senha:</label>
+        <span id="senha-erro"></span>
+        <input type="password" name="senha" id="senha" placeholder="********" required />
+
+        <label for="confirme-a-senha">Confirme a senha:</label>
+        <span id="senha2-erro"></span>
+        <input type="password" name="confirme-a-senha" id="confirme-a-senha" placeholder="********" required />
+
+        <label for="biografia">Biografia:</label>
+        <span id="biografia-erro"></span>
+        <textarea
+          name="biografia"
+          id="biografia"
+          cols="50"
+          rows="5"
+          placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sunt voluptatem mollitia ut quis ad modi explicabo at impedit laborum. Provident, consequuntur nisi?"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn-submit button">Cadastrar</button>
+      </form>
+      <p><a href="login.html">Voltar para login</a></p>
+    </div>
+  </body>
 </html>
