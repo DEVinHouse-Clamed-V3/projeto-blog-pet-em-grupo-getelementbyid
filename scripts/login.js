@@ -10,11 +10,11 @@ document.getElementById('loginFormulario').addEventListener('submit', function (
 
     if (usuario) {
         // Verificar se a senha corresponde
-        if (usuario.password === password) {
+        if (usuario.senha === password) {
 
-                     
-            // Redirecionar para a página de index se o login for bem-sucedido
+      // Redirecionar para a página de index se o login for bem-sucedido
             window.location.href = 'index.html';
+
         } else {
 
             // Senha incorreta
@@ -25,6 +25,7 @@ document.getElementById('loginFormulario').addEventListener('submit', function (
         document.getElementById('loginError').textContent = 'E-mail não cadastrado.';
     }
 });
+
 
 // colar duplicado no campo de senha
 document.getElementById('senha').addEventListener('paste', function(e) {
